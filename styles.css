@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background-color: rgb(241, 155, 140);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.navbar, .container{
+    background-color: rgb(51, 51, 124);
+    width: 800px;
+    border-radius: 3px;
+}
+.navbar{
+    padding: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn, input{
+    height: 35px;
+    padding: 0 1em;
+}
+.color{
+    padding: 0 .25em;
+    width: 100px;
+    margin: 0 1em;
+}
+.colorContainer{
+    display: flex;
+    gap: 3px;
+    padding: 3px;
+}
+.colorBloc{
+    height: 5px;
+    width: 5px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2px;
+}
+.container{
+    --size: 4;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(var(--size), 1fr);
+    grid-template-rows: repeat(var(--size), 1fr);
+    gap: 3px;
+    padding: 3px;
+}
+.bloc{
+    background-color: rgb(202, 0, 0);
+    border-radius: 2px;
+}
+@media only screen and (max-width: 700px) {
+    .navbar, .container{
+        background-color: rgb(14, 84, 86);
+        width: 370px;
+        border-radius: 3px;
+    }
+    .container{
+        height: 400px;
+
+    }
+  }
